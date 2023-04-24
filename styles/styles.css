@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&family=Rock+Salt&display=swap');
+
+body {
+    font-family: Roboto;
+    background-color: white;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 5%;
+    background-color: rgba(255, 255, 255, 1);
+    align-content: center;
+}
+img{
+    margin-right: 5px;
+    margin-top: 5px;
+    float: left;
+    width: 120px;
+    box-shadow: 0 0 10px 5px rgb(15, 10, 10);
+}
+header {
+    display: flex;
+    background-color: rgb(114, 4, 136);
+    color: rgb(139, 7, 106);
+    max-width: 600px;
+    min-width: 350px;
+    padding: 5px;
+    border-radius: 15px;
+    text-align: center;
+}
+header nav {
+    background-color: #ffffff;
+    width: 100%;
+    font-size: 0;
+    height: 2.6rem;
+    line-height: 2.6rem;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+}  
+footer {
+    background-color: rgb(105, 7, 84);
+    color: rgb(9, 173, 44);
+    padding: 25px;
+    text-align: center;
+    border-radius: 20px;
+    text-shadow: 2px 2px 5px rgb(81, 3, 153);
+}
+h1 {
+    padding-left: 50px;
+    font-family: 'Roboto serif', cursive;
+    color: rgba(0, 0, 0, 1);
+    font-size: 2.5em;
+}
+main {
+    padding-left: 20px;
+    font-family: 'Roboto Serif', serif;
+}
+
+h2 {
+    font: size 50px;;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgb(11, 1, 1);
+    font-family: 'Roboto Serif', serif;
+}
+.copy{
+    color: rgb(225, 225, 248);
+}
+  
+
