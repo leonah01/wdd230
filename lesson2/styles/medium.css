@@ -1,0 +1,20 @@
+@media screen and (max-width: 600px) {
+    .head h1 {
+      font-size: 24px;
+    }
+    
+    .head h2 {
+      font-size: 16px;
+    }
+    
+    .section h3 {
+      font-size: 18px;
+    }
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-gap: 20px;
+}
+}

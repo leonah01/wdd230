@@ -1,13 +1,15 @@
-function updateTime() {
-    var now = new Date();
-    var hours = now.getHours();
-    var minutes = now.getMinutes();
-    var seconds = now.getSeconds();
-  
-    document.getElementById('time').innerHTML = 'last updated on:'  +  now 
-  }
-  
-  setInterval(updateTime, 2000);
+const options = {
+  weekdays: "long",
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+};
+
+document.getElementById('lastmodified').textContent = new Date().toLocaleDateString('en-US', options)
+const currentYear = new Date().getFullYear();
+document.getElementById('year').textContent = currentYear;
+const currenttime = new TimeRanges().getFullTime;
+document.getElementById('time').textContent = currenttime;
   
 const header = document.querySelector('header');
 const footer = document.querySelector('footer');
