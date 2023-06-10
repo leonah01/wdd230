@@ -1,0 +1,45 @@
+@media (min-width: 48em) {
+	nav a {
+		font-size: 1.3rem;
+	}
+	.container {
+	  width: 960px;
+	  margin: 0 auto;
+	}
+	.menu-left {
+	  display: flex;
+	  flex: 1;
+	  justify-content: flex-start;
+	}
+	.nav-toggle {
+	  display: none;
+	}
+	.menu-right {
+	  display: flex;
+	  justify-content: flex-end;
+	  flex: 1;
+	}
+	table {
+		display: table;
+		width: 100%;
+	 }
+
+	 table thead {
+		display: table-header-group;
+	 }
+
+	 table tbody {
+		display: table-row-group;
+	 }
+
+	 table tr {
+		display: table-row;
+	 }
+
+	 table th,
+	 table td {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: left;
+	 }
+ }
