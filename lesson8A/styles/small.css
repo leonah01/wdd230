@@ -1,4 +1,4 @@
-* {
+ /*{
    box-sizing: border-box;
      margin: 0;
      padding: 0;
@@ -6,7 +6,7 @@
  
  /* Basic Styles */
  body {
-   font-family: Arial, sans-serif;
+   font-family: Robboto;
    font-size: 16px;
    background-color: #f9f9f9;
    color: #000;
