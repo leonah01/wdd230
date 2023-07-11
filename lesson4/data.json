@@ -1,0 +1,85 @@
+{
+    "companies": [
+      {
+        "name": "Business Registration",
+        "address": "4th Floor, Bard House, 69 Samora Machel, Avenue, Harare Zimbabwe",
+        "phone": "+263 717 553 672",
+        "website": "https://registeracompany.co.zw/",
+        "image": "images/REGY.png",
+        "membershipLevel": "Gold",
+        "ABOUT": "We offer help to people who wants to register their companies."
+      },
+      {
+        "name": "LED Travel and Tours",
+        "address": "Address: 1127 6 fereday eastlea drive, Harare Zimbabwe",
+        "phone": " (024) 2778831",
+        "website": "https://www.ledcarrental.co.zw/",
+        "image": "images/LED.jpeg",
+        "membershipLevel": "Gold",
+        "otherInfo": "For all your luxurious travells around Zimbabwe."
+      },
+      {
+        "name": "CMD Designs",
+        "address": "Zimbabwe",
+        "phone": " +236786250407",
+        "website": "https://cmdesigns.co.zw/",
+        "image": "images/CMDesigns.jpeg",
+        "membershipLevel": "Gold",
+        "otherInfo": "For all your Web designs, Web hosting,Web Plan, Copywrite, Graphics, Digital marketing"
+      },
+      {
+        "name": "Tenfold-ict-solutions",
+        "address": " 1 Warthog Cl, Harare, Zimbabwe",
+        "phone": "+263 71 402 5605",
+        "website": "https://www.sortlist.com/agency/tenfold-ict-solutions",
+        "image": "images/tenfolds.jpeg",
+        "membershipLevel": "Silver",
+        "otherInfo": "Growing business from paper roots to established technologically advanced forces."
+      },
+      {
+        "name": "AMPS engineering",
+        "address": "379 Limpopo Way, Harare",
+        "phone": "0782345424",
+        "website": "https://ampsengineering.co.zw",
+        "image": "images/AMPS.jpeg",
+        "membershipLevel": "Silver",
+        "otherInfo": "supplying our diverse clientele with robust, fit for purpose and versatile shelving solutions. Our shelving types include: shop fittings, industrial shelving and library shelving. "
+      },
+      {
+        "name": "Orbit Revolution",
+        "address": "4610 chinotimba, Victoria Falls, Zimbabwe",
+        "phone": "(263) 77 489 9094",
+        "website": "https://orbitrevolution.tech/",
+        "image": "images/Revolution.jpeg",
+        "membershipLevel": "Silver",
+        "otherInfo": "Elevating companies that are willing to push boundaries and be unique in any way possible."
+      },
+      {
+        "name": "Pantic Architects",
+        "address": "17125 Teign Rd, Harare, Zimbabwe",
+        "phone": " +263 24 2870232<",
+        "website": "https://www.dpworld.com/",
+        "image": "images/Pantic.jpeg",
+        "membershipLevel": "Bronze",
+        "otherInfo": "For all your architectural design firm that thrives on challenges in design and construction from house plan designs to town. "
+      },
+      {
+        "name": "BSI Steel Zimbabwe",
+        "address": " 37 Coventry Road Workington Harare Zimbabwe",
+        "phone": " +263 8677 000 444",
+        "website": "https://www.bsisteel.co.zw/",
+        "image": "images/BSI.jpeg",
+        "membershipLevel": "Bronze",
+        "otherInfo": "For all your metal products be it in fencing, Beams and columns, Tubing products etc."
+      },
+      {
+        "name": "Hardware City",
+        "address": "7 kingsdale walk, longchen plaza, 33 chinhoyi street",
+        "phone": " (024) 2710473",
+        "website": "https://www.bholahardware.com/",
+        "image": "images/Bhola.jpeg",
+        "membershipLevel": "Bronze",
+        "otherInfo": "For all your hadware equipment we are happy to offer."
+      }
+    ]
+  }

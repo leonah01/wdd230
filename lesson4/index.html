@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+   <meta charset="UTF-8" >
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="Rutendo">
+   <link rel="stylesheet" href="styles/normalize.css">
+   <link rel="stylesheet" href="styles/base.css">
+   <link rel="stylesheet" href="styles/medium.css" >
+   <link rel="stylesheet" href="styles/large.css" >
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+<title>TriBack Chamber of commerce</title>
+
+</head>
+<header class="site-header"> 
+
+  <div class="header-section">
+      <img class="logo-header" src="images/TriBaklogo.jpeg" alt="TriBak Chamber logo">   
+      <h1 class="page-title">TriBack Chamber of Commerce</h1>
+      <a href="https://instagram.com/" target="_blank"><img src="images/instagram.jpeg" alt="instagram" class="instagram-logo"></a>
+      <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.jpeg" alt="facebook" class="fb-logo"></a>
+      <nav>
+          <button id="hamburgerBtn"><span>&#9776;</span><span>&#9776;</span></button>
+          <ul id="primaryNav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="discover.html">Discover</a></li> 
+              <li><a href="directory.html">Directory</a></li>
+              <li><a href="join.html">Join</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </nav>
+  </div> 
+      <div class="current-date">
+        <div id="date-now"></div>
+      </div>
+</header> 
+<div class="noDisplay" id="meetAndGreet">
+<span>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</span>
+</div>
+<main class="home-grid">
+<section id="hero-banner">
+  <h2>Welcome to TriBak</h2>
+  <a href="join.html">Join the Chamber</a>
+  <picture>
+    <source media="(max-width: 390px)" srcset="images/">
+    <source media="(max-width: 690px)" srcset="images/">
+    <source media="(max-width: 1002px)" srcset="images/">
+    <img src="images/businesspic.jpeg" alt="hero-image">
+  </picture>
+</section>
+<section class="event">
+  <h2>Annivessary Celebration</h2>
+  <h3>Victoria Falls Hotel </h3>
+  <p>Let's meet and make a difference, we will guide you on how best you can travel to Zimbabwe through our company.
+    <a href="join.html" aria-label="Learn more about joining the Dubai Chamber of Commerce"> Learn more</a>...
+  </p>
+</section>
+<section class="weather">
+  <h2>Current Weather in Zimbabwe</h2>
+  <div>
+    <picture>
+      <img id="weatherIcon" src="" alt="Weather Icon" height="300" width="400">
+    </picture>
+    <p> Temp: <span id="temperature"></span>  &deg;C</p>
+  </div>
+  <h3><span id="condition">Weather Condition</span></h3>
+  <hr>
+  <p>Wind speed: <span id="windSpeed"></span> km/hr</p>
+  <p>Wind chill: <span id="windChill"></span>  &deg;C</p>
+  <p>Zimbabwe current weather reveals a humidity level of <span id="humidity"></span>% RH , resulting in a moderately humid environment.</p>
+</section>
+<section class="news">
+  <h2>News Release</h2>
+  <p class="card">
+    <h1>TriBack Chamber of Commerce</h1>
+    Welcome to Tribak Chamber of Commerce, one of the most vibrant economies in Southern Africa. Our mission is to support an essential organization supporting the business community. We represents businesses of all sizes and sectors, advocating for them on a national and international level, providing support, networking opportunities, and resources for growth. Our site provides access to critical business resources, including research and reports, legal advice, business tools. We provide training and mentorship programs, access to funding, and business advice, that can help businesses grow and thrive. This is is an excellent platform for businesses to network and connect with potential clients, partners, and investors. If you become a member you can attend various events, business conferences, and trade fairs, offering unique opportunities to build new contacts and stay up to date with industry trends.
+  </p>
+</section>
+<div class="spotlight">
+  <section id="spotlight1">
+    <h3>Company</h3>
+    <p>CMD Designs</p>
+    <p>For all your Web designs, Web hosting,Web Plan, Copywrite, Graphics, Digital marketing</p>
+    <p><a href="https://cmdesigns.co.zw/">DESIGNS</a></p>
+    <img src="images/CMDesigns.jpeg" alt="">
+    <p>Address: Zimbabwe</p>
+    <p>Contact: +236786250407</p>
+  </section>
+  <section id="spotlight2">
+    <h3>Company</h3>
+    <p>LED Travel and Tours</p>
+    <p>For all your luxurious travells around Zimbabwe.</p>
+    <p><a href="https://www.ledcarrental.co.zw/">BOOKINGS</a></p>
+    <img src="images/LED.jpeg" alt="">
+    <p>Address: 1127 6 fereday eastlea drive, Harare Zimbabwe</p>
+    <p>contact: (024) 2778831</p>
+  </section>
+  <section id="spotlight3" class="large-only">
+    <h3>Company</h3>
+    <p>Business registration</p>
+    <p>We offer help to people who wants to register their companies.</p>
+    <p><a href="https://registeracompany.co.zw/">REGISTRATION</a></p>
+    <img src="images/REGY.png" alt="">
+    <p>Address: 4th Floor, Bard House, 69 Samora Machel, Avenue, Harare Zimbabwe</p>
+    <p>Contact: +263 717 553 672 </p>
+  </section>
+</div>
+<div class="medium-display" id="join">
+  <p>Discover how to join the chamber of commerce and how it will benefit your organization!<a href="contact.html" class="join-button">Join Us!</a>.</p>
+</div>  
+</main> 
+<footer>
+  <hr>
+      <div><p id="visits"></p></div>
+  <div class="footer-container">
+    <div>
+      <picture><img src="images/TriBaklogo.jpeg" alt="logo" height="200" width="150"></picture>
+    </div>
+    <div class="contact-info">
+      <p>Zimbabwe </p>
+      <p>145 James Street, Harare zimbabwe</p>
+      <p>Phone: +263 780 480 442</p>
+    </div>
+    <div class="map">
+      <a href="https://www.google.com/maps/@-17.9850994,31.7399073,8z?entry=ttu" target="_blank">Location <span>&#128205;</span>
+      </a>
+    </div>
+  </div>
+  <div class="rights"> &copy;2023 TriBack |<span id="year"></span> |Last Modified <span id="lastmodified"></span> |All rights reserved by BYUI </div>
+</footer>    
+    <script src="scripts/main.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+</html>

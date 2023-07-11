@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+   <meta charset="UTF-8" >
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="Rutendo">
+   <link rel="stylesheet" href="styles/normalize.css">
+   <link rel="stylesheet" href="styles/base.css">
+   <link rel="stylesheet" href="styles/medium.css" >
+   <link rel="stylesheet" href="styles/large.css" >
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+<title>TriBack Chamber of commerce</title>
+
+</head>
+<header class="site-header"> 
+
+  <div class="header-section">
+      <img class="logo-header" src="images/TriBaklogo.jpeg" alt="TriBak Chamber logo">   
+      <h1 class="page-title">TriBack Chamber of Commerce</h1>
+      <a href="https://instagram.com/" target="_blank"><img src="images/instagram.jpeg" alt="instagram" class="instagram-logo"></a>
+      <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.jpeg" alt="facebook" class="fb-logo"></a>
+      <nav>
+          <button id="hamburgerBtn"><span>&#9776;</span><span>&#9776;</span></button>
+          <ul id="primaryNav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="discover.html">Discover</a></li> 
+              <li><a href="directory.html">Directory</a></li>
+              <li><a href="join.html">Join</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </nav>
+        </div> 
+        <div class="current-date">
+          <div id="date-now"></div>
+        </div>
+        </header>
+        <main>
+            <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend class="top">
+                <h2>Fill this form to send us a text to assist you</h2>
+                </legend>
+                <label class="top">First Name *️⃣<input type="text" name="fname" placeholder="Xav" required></label>
+                <label class="top">Last Name *️⃣<input type="text" name="lname" placeholder="Mhaka" required></label>
+                <label class="top">Phone *️⃣<input type="tel" name="phone" placeholder="+263...." required></label>
+                <label class="top">Email *️⃣<input type="email" name="email" placeholder="your@gmail.com" required></label>
+                <label class="top">Membership Level
+                <select name="membership">
+                    <option value="np_membership">NP Membership</option>
+                    <option value="bronze_membership">Bronze Membership</option>
+                    <option value="silver_membership">Silver Membership</option>
+                    <option value="gold_membership">Gold Membership</option>
+                </select>
+                </label>
+                <label class="top">Business Name<input type="text" name="business_name" placeholder="Business Name"></label>
+                <label class="top">Business Description<textarea name="business_description" placeholder="text here..."></textarea></label>
+                <input type="hidden" name="form_load_time" value="">
+                <label class="top">
+                Confirm! you entered the correct details before submiting*️⃣<input type="checkbox" name="process" value="yes" required>
+                </label>
+            </fieldset>
+            <input type="submit" value="SEND" class="submitBtn">
+            </form>
+        </main>  
+  <footer>
+    <div class="footer-container">
+      <div>
+        <picture><img src="images/TriBaklogo.jpeg" alt="logo" height="200" width="150"></picture>
+      </div>
+      <div class="contact-info">
+        <p>Zimbabwe </p>
+        <p>145 James Street, Harare zimbabwe</p>
+        <p>Phone: +263 780 480 442</p>
+      </div>
+      <div class="map">
+        <a href="https://www.google.com/maps/@-17.9850994,31.7399073,8z?entry=ttu" target="_blank">Location <span>&#128205;</span>
+        </a>
+      </div>
+    </div>
+    <hr>
+    <div class="rights"> &copy;2023 TriBack |<span id="year"></span> |Last Modified <span id="lastmodified"></span> |All rights reserved by BYUI </div>
+  </footer>    
+  <script src="scripts/main.js"></script>
+  <script src="scripts/windchill.js"></script>
+  </body>
+  </html>

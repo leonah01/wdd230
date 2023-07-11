@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+   <meta charset="UTF-8" >
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="Rutendo">
+   <link rel="stylesheet" href="styles/normalize.css">
+   <link rel="stylesheet" href="styles/base.css">
+   <link rel="stylesheet" href="styles/medium.css" >
+   <link rel="stylesheet" href="styles/large.css" >
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+<title>TriBack Chamber of commerce</title>
+
+</head>
+<header class="site-header"> 
+
+  <div class="header-section">
+      <img class="logo-header" src="images/TriBaklogo.jpeg" alt="TriBak Chamber logo">   
+      <h1 class="page-title">TriBack Chamber of Commerce</h1>
+      <a href="https://instagram.com/" target="_blank"><img src="images/instagram.jpeg" alt="instagram" class="instagram-logo"></a>
+      <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.jpeg" alt="facebook" class="fb-logo"></a>
+      <nav>
+          <button id="hamburgerBtn"><span>&#9776;</span><span>&#9776;</span></button>
+          <ul id="primaryNav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="discover.html">Discover</a></li> 
+              <li><a href="directory.html">Directory</a></li>
+              <li><a href="join.html">Join</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </nav>
+  </div> 
+  <div class="current-date">
+    <div id="date-now"></div>
+  </div>
+</header>
+<main>
+    <h1>Contact Information</h1>
+
+        <form method="get" action="thankyou.html" id="contact-form" class="contact-form">
+        <label for="name" class="top">Name *</label>
+        <input type="text" id="name" name="name" placeholder="Xav Mhaka" required>
+        <br><br>
+
+        <label for="organization" class="top">Organization *</label>
+        <input type="text" id="organization" name="organization" placeholder="Company, ogn." required>
+        <br><br>
+
+        <label for="mailing-address" class="top">Mailing Address *</label>
+        <input type="text" id="mailing-address" name="mailing-address" placeholder="123 Street area" required>
+        <br><br>
+
+        <label for="mailing-address-line2" class="top">Mailing Address line 2</label>
+        <input type="text" id="mailing-address-line2" name="mailing-address-line2" placeholder="123 street, area">
+        <br><br>
+
+        <label for="city" class="top">City</label>
+        <input type="text" id="city" name="city" placeholder="Harare">
+        <br><br>
+
+        <label for="state" class="top">State *</label>
+        <input type="text" id="state" name="state" placeholder="state" required>
+        <br><br>
+
+        <label for="postal-code" class="top">Postal Code</label>
+        <input type="text" id="postal-code" name="postal-code" pattern="[0-9]+" placeholder="00000">
+        <br><br>
+
+        <label for="country" class="top">Country *</label>
+        <input type="text" id="country" name="country" placeholder="Zimbabwe" required>
+        <br><br>
+
+        <label for="phone" class="top">Phone *</label>
+        <input type="tel" id="phone" name="phone" placeholder="+263 -----" required>
+        <br><br>
+
+        <label for="email" class="top">Email *</label>
+        <input type="email" id="email" name="email" placeholder="myemail@gmail.com" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+        <br><br>
+
+        <label for="contact-preference" class="top">Contact Preference; Email or Phone Call</label>
+        <select id="contact-preference" name="contact-preference" required class="contact-preference">
+        <option value="" disabled selected>Select...</option>
+        <option value="yes">Yes Email</option>
+        <option value="no">No</option>
+        </select>
+        <br><br>
+
+        <label for="comments" class="top">Comments/Questions</label>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Text here." class="comments"></textarea>
+        <br><br>
+
+        <p>TriBak Chamber of Commerce will not sell your contact or email information. In order to serve your request, our office shares information with chamber member businesses who can provide you with additional information. Please indicate below if we may share your request for information:</p>
+
+        <input type="radio" id="release-yes" name="release-info" value="yes" class="release-yes">
+        <label for="release-yes">Yes, you may release this information.</label>
+        <br>
+        <input type="radio" id="release-no" name="release-info" value="no" class="release-no">
+        <label for="release-no">No, please do not release this information.</label>
+        <br><br>
+
+        <input type="submit" value="Submit" class="submitBtn">
+        </form>
+</main>
+<footer>
+    <div class="footer-container">
+      <div>
+        <picture><img src="images/TriBaklogo.jpeg" alt="logo" height="200" width="150"></picture>
+      </div>
+      <div class="contact-info">
+        <p>Zimbabwe </p>
+        <p>145 James Street, Harare zimbabwe</p>
+        <p>Phone: +263 780 480 442</p>
+      </div>
+      <div class="map">
+        <a href="https://www.google.com/maps/@-17.9850994,31.7399073,8z?entry=ttu" target="_blank">Location <span>&#128205;</span>
+        </a>
+      </div>
+    </div>
+    <hr>
+    <div class="rights"> &copy;2023 TriBack |<span id="year"></span> |Last Modified <span id="lastmodified"></span> |All rights reserved by BYUI </div>
+  </footer>    
+  <script src="scripts/main.js"></script>
+  <script src="scripts/contact.js"></script>
+  </body>
+  </html>
