@@ -1,0 +1,946 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "poppins", sans-serif;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+nav{
+    padding: 5px;
+}
+
+.toggle{
+  background-color: #ef4b3f;
+}
+nav{
+    background-color: #ef4b3f;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+}
+.head h1{
+    color: white;
+}
+nav a{
+    color:#fff;
+}
+.logo{
+    flex: 1;
+}
+.logo a{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+.logo a:hover{
+    color: #fff;
+}
+
+.logo img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li a {
+    display: block;
+    padding: 0.5rem 2vw;
+    text-decoration: none;
+    color: #fff;
+  }
+  nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  nav ul li a:hover {
+    background-color: #f7f4f4;
+    color: #fff;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul.open {
+    display: block;
+  }
+  
+  .head {
+    background-color: #ffffff;
+    height: 80px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  main {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #000;
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  h2 , h3 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  
+  
+  #offer {
+    background-color: #0c0c0c;
+    padding: 5px;
+    border: 1px solid tomato;
+    border-radius: 5px;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 100%;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  
+  #offer span {
+    font-size: 16px;
+    color: #000;
+  }
+  
+  
+  nav button {
+    margin: 0.2rem 2vw;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #ef4b3f;
+    float: right;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, auto);
+    margin-bottom: 20px;
+    text-align: center;
+    justify-content: space-between;
+  }
+  
+  nav ul li {
+    margin-left: 0;
+  }
+  
+  nav ul li a {
+    padding: 0.5rem 2vw;
+    text-decoration: none;
+    color: white;
+  }
+  
+  nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #043d06;
+  }
+  
+  
+  nav button {
+    display: none;
+  }
+  
+  nav ul {
+    display: none;
+  }
+  
+  nav ul.open {
+    display: block;
+    background-color: transparent;
+  }
+  
+  .menu-left {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-left li {
+    margin-left: 0;
+  }
+  
+  #hamburgerBtn {
+    display: block;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #000;
+    margin-right: 1rem;
+  }
+  
+  #primaryNav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  
+  #primaryNav li a {
+    text-decoration: none;
+  }
+  
+  #hamburgerBtn span:nth-child(1) {
+    display: block;
+  }
+  
+  #hamburgerBtn span:nth-child(2) {
+    display: none;
+  }
+  
+  #hamburgerBtn.open span:nth-child(1) {
+    display: none;
+  }
+  
+  #hamburgerBtn.open span:nth-child(2) {
+    display: block;
+  }
+  
+  section img {
+    width: 100%;
+    height: 250px;
+  }
+  
+  .logo img {
+    width: 45px;
+    height: 45px;
+  }
+@media screen and (max-width:600px){
+    nav{
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+    }
+    .menu{
+        margin-top: 15px;
+        display: none;
+    }
+    .menu.active, .toggle{
+        display: block;
+    }
+    .toggle{
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+}
+/*********hero**********/
+.hero {
+    position: relative;
+    height: 100vh;
+    background-color: #fff;
+}
+  
+.banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+  
+.banner img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #0c0c0c;
+    z-index: 1;
+}
+  
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 0.85rem;
+   
+}
+  
+.button:hover {
+    background-color: #222;
+}
+/* Button */
+.button {
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ef4b3f;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #ceefb5;
+  }
+  
+  /* Set up the about section styles */
+  .about {
+    background-color: #ef4b3f;
+    color: white;
+    padding: 20px;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .about p {
+    margin: 0;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  
+  .about ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .about li {
+    margin-right: 20px;
+  }
+  
+  .about a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .about a:hover {
+    background-color: #ef4b3f;
+  }/* Hero text */
+ .hero-text .intro{
+    color: #222;
+  }
+  .hero-text {
+    text-align: center;
+  }
+  
+  .hero-text h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color:#222;
+  }
+  
+  .hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color:white;
+  }
+  
+/* style speciality drink */
+.specialty-drinks {
+  background-color: #f9f9f9;
+  padding: 50px;
+  text-align: center;
+}
+
+.specialty-drinks h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.specialty-drinks h3 .instructions {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+ .button:hover {
+  background-color: green;
+}
+
+@media screen and (max-width: 768px) {
+  .specialty-drinks {
+    padding: 30px;
+  }
+  
+  .specialty-drinks h2 {
+    font-size: 2rem;
+  }
+  
+  .specialty-drinks p.instructions {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  
+  .specialty-drinks .button {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
+
+  
+/* Set the container width */
+.container {
+    width: 1200px;
+
+}
+  
+/*  about section */
+.wrapper{
+    margin: 150px auto;
+    width: 70px;
+}
+.wrapper img{
+    max-width: 320px;
+    float: left;
+}
+.text-box{
+    color: #fff;
+}
+.text-box{
+    font-size: 42px;
+}
+.text-box p{
+    font-size: 16px;
+}
+/* Style drink section */
+
+.juice{
+    text-align: center;
+    font-size: larger;
+}
+.photo {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.photo img {
+    padding: 5px;
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 10%;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+      
+.demo-data ul li {
+    list-style: none;
+    text-align: center;
+}
+
+.demo-data {
+    color: #000;
+    background-color: rgb(16, 55, 161);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.photo img {
+    object-fit: cover;
+}
+
+  
+/* styles the description */
+.description {
+    padding: 10px;
+    background-color: #fff;
+}
+  
+.description h2 {
+    font-size: 24px;
+    text-align: center;
+    color: #0c0c0c;
+    border-bottom: 1px solid #0a0a0a;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center; 
+}
+  
+.description p {
+    font-size: 10px;
+    line-height: 0;
+    margin-bottom: 1rem;
+}
+/* weather section */
+.weather {
+    background-color: white;
+    padding: 50px 0;
+}
+  
+.weather-heading {
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+    background-color: #ef4b3f;
+}
+  
+  .weather-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+.weather-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px #222;
+    padding: 40px;
+    max-width: 700px;
+}
+  
+.weather-icon {
+    text-align: center;
+}
+  
+.temperature {
+    font-size: 64px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+  
+.condition {
+    font-size: 24px;
+    margin-top: 10px;
+}
+  
+.humidity {
+    font-size: 24px;
+    margin-top: 10px;
+}
+  
+.forecast-card {
+    margin-top: 40px;
+}
+  
+.forecast-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+  
+.forecast-container {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.forecast-day {
+    text-align: center;
+    flex-basis: 30%;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px #222;
+    padding: 20px;
+}
+  
+.forecast-day-heading {
+    font-size: 20px;
+    font-weight: bold;
+}
+  
+.forecast-day-temp {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+  
+.forecast-day-hi,
+.forecast-day-low {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}      
+/* Media queries */
+
+@media screen and (max-width: 768px) {
+    .weather-card {
+      padding: 20px;
+      max-width: 500px;
+    }
+    
+    .forecast-container {
+      flex-wrap: wrap;
+    }
+    
+    .forecast-day {
+      margin-bottom: 20px;
+      flex-basis: 45%;
+    }
+}
+/*  coastal section */
+
+.gallery {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.gallery img {
+    padding: 5px;
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 10%;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials a {
+  display: inline-block;
+  font-size: 30px;
+  text-decoration: none;
+  margin-left: 1rem;
+  color: #fff;
+  transition: color 0.3s ease-in-out;
+}
+
+.socials a:hover {
+  color: tomato;
+}
+
+.socials img {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  transition: transform 0.3s ease-in-out;
+}
+.info-us{
+  text-align: center;
+  background-color: #ef4b3f;
+}
+.info-us h1{
+  color: white;
+}
+.socials img:hover {
+  transform: scale(1.2);
+}
+/* footer  */
+footer {
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  background-color: #043d06;
+}
+.footer-container {
+  display: grid;
+  justify-content: space-between;
+  margin: 0;
+  align-items: center;
+  padding: 20px;
+}
+.footer-container img,
+header img {
+  height: 70px;
+  width: auto;
+}
+
+.contact-info {
+  text-align: right;
+}
+
+.contact-info p {
+  margin: 0;
+  padding: 0.5rem;
+}
+.footer-container div {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.footer-container div:last-child {
+  margin-bottom: 0;
+}
+
+.contact-info {
+  flex: 1;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.map {
+  flex: 1;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+div.map p {
+  color: white;
+}
+.map-area {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.map-area p {
+    color: white;
+}
+  
+.map-area a {
+    text-decoration: none;
+}
+.attributions{
+    background-color: white;
+    font-size: large;
+}  
+/* style the form */
+form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ef4b3f;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #4d4b4b;
+  }
+  
+  input[type="submit"]
+.drink-order-form {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  
+  /* style the form inputs */
+  .drink-order-form input[type=text], 
+  .drink-order-form input[type=email], 
+  .drink-order-form input[type=tel], 
+  .drink-order-form textarea, 
+  .drink-order-form select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f2f2f2;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+  
+  /* style the form submit and reset buttons */
+  .drink-order-form button {
+    background-color: #043d06;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  
+  .drink-order-form button.submit-btn {
+    margin-right: 10px;
+  }
+  
+  .drink-order-form button.reset-btn {
+    background-color: #f44336;
+  }
+  
+  .drink-list-outer-div center h2{
+     padding: 10px;
+  }
+  /* style the form heading and hr */
+  .drink-order-form h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .drink-order-form hr {
+    border: 1px solid #af2626;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  
+  /* style the drink list and nutrition sections */
+  .drink-list-outer-div, .drink-nutrition-outer-div {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .drink-list-outer-div h2, .drink-nutrition-outer-div h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .scrollable {
+    height: 200px;
+    overflow-y: auto;
+  }
+  
+  .drink-list {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .drink-list th {
+    background-color: #080808;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .drink-list td {
+    padding: 12px 20px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .drink-list tr:hover {
+    background-color: #f2f2f2;
+  }
+  .list{
+    font-size: x-large;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 40px;
+    
+  }
+  
+  
+  .drink-nutrition-outer-div {
+    background-color: #fafcfa;
+    color: rgb(5, 5, 5);
+    margin-top: 30px;
+    padding: 10px;
+  }
+  
+  .drink-nutrition-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+  
+  .drink-nutrition-table td {
+    padding: 10px;
+  
+  }
+  
+  .drink-nutrition-table td h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .drink-nutrition-table td p {
+    font-size: 16px;
+    margin: 0;
+  }
+
+/* about page*/
+iframe {
+    width: 50%;
+    margin-top: 0.5rem;
+}
+.heading {
+
+    text-align: center;
+    padding: 10px;
+    background-color: #043d06;
+    color: white;
+}
+.i
+.info .info-contact{
+    text-align: center;
+    padding: 15px;
+    font-size: large;
+    margin: 20px;
+}
+.info-contact{
+    text-align: center;
+    padding: 15px;
+    font-size: medium;
+    margin: 10px;
+
+}
+.info-contact h1{
+    font-size: large;
+}
+.map-area h2{
+    background-color: #043d06;
+    color: white;
+
+}
+.img-deg{
+    float: left;
+    padding: 10px;
+    border-radius: 1rem;
+}

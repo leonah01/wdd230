@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carlsbad Bountiful Foods (Fresh Page)</title>
+  <meta name="description" content="Bountiful Foods is small business specializing in organic, locally grown foods. They are physically located in Carlsbad, California, however,
+   they have many food trucks that cover the coastal area from Los Angeles to San Diego.">
+  <meta name="author" content="Rutendo">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <header class="toggle">  
+      <div class="logo">
+        <a href=""><img src="images/Bountiful.jpeg" alt="logo">Carlsbad Bountiful Foods</a>
+      </div>
+      <nav>
+      <button id="hamburgerBtn"><span>&#9776;</span><span>&#9776;</span></button>
+        <ul id="primaryNav">
+        <li><a href="carlsbad.html">Home</a></li>
+        <li><a href="fresh.html">Fresh</a></li>
+        <li><a href="about.html">About Us</a></li>
+        </ul>
+   </nav>
+ </header>
+ <main>
+   <div class="fruit-list">
+     <form id="drink-form" class="form drink-order-form" onsubmit="return false">
+       <h2>Drink Order Form</h2>
+       <hr>    
+       <fieldset>
+           <label class="top">Name* <input type="text" id="user-name" name="user-name" required ></label>
+           <label class="top">Email*
+               <input type="email" id="email" name="email" placeholder="someone@gmail.com" required ></label>
+           <label class="top">Cell phone number*
+               <input type="tel" id = "cell-phone" name="cell-phone" placeholder="1235551234" required ></label>
+       
+           <label class="top">Select a fruit*
+               <select name="Fruit-1" id="fruit-1" required>
+                   <option value="">--choose a fruit--</option>
+               </select>
+           </label>
+           <label class="top">Select a fruit
+               <select name="Fruit-2" id="fruit-2">
+                   <option value="">--choose a fruit--</option>
+               </select>
+           </label>
+           <label class="top">Select a fruit
+               <select name="Fruit-3" id="fruit-3">
+                   <option value="">--choose a fruit--</option>
+               </select>
+           </label>
+           <label class="top">Special Instructions
+               <textarea name="special-instructions" id = "special-instructions" rows="3" cols="23"></textarea>
+           </label>
+           <button id="get-drink-info-button" type="submit" class="submit-btn">Submit</button>
+           <button id="drink-form-reset" type="reset" class="submit-btn reset-btn">Clear Form</button>
+       </fieldset>    
+   </form>
+ 
+     <div class="drink-list-outer-div center">
+       <h2>Your Drinks</h2>
+       <hr>
+       <div id="drink-list-inner-div" class="scrollable">
+         <table class="drink-list" id="drink-list-table-id">
+         </table>
+       </div>
+     </div>
+     <div class="drink-nutrition-outer-div">
+       <h2>Drink Nutrition</h2>
+       <hr>
+       
+       <table class="drink-nutrition-table center" id="drink-nutrition-table-id">
+         <tr>
+           <td>
+             <h2>Date</h2>
+           </td>
+           <td id="drink-date-cell-id">
+             <p></p>
+           </td>
+         </tr>
+         <tr>
+           <td>
+             <h2>Name</h2>
+           </td>
+           <td id="drink-user-name-cell-id">
+             <p></p>
+           </td>
+         </tr>
+         <tr>
+           <td>
+             <h2>Email</h2>
+           </td>
+           <td id="drink-user-email-cell-id"></td>
+         </tr>
+         <tr>
+           <td>
+             <h2>Phone</h2>
+           </td>
+           <td id="drink-user-phone-cell-id"></td>
+         </tr>
+         <tr>
+           <td>
+             <h2>Fruits</h2>
+           </td>
+           <td id="drink-fruit-names-cell-id"></td>
+         </tr>
+         <tr>
+           <td>
+             <h2>Carbs</h2>
+           </td>
+           <td id="drink-carbs-cell-id"></td>
+         </tr>
+         <tr>
+           <td>
+             <h2>Protein</h2>
+           </td>
+           <td id="drink-protein-cell-id"></td>
+         </tr>
+         <tr>
+           <td>
+             <h2>Fat</h2>
+           </td>
+           <td id="drink-fat-cell-id"></td>
+         </tr>
+         <tr>
+           <td>
+             <h2>Sugar</h2>
+           </td>
+           <td id="drink-sugar-cell-id"></td>
+         </tr>
+         <tr>
+           <td>
+             <h2>Calories</h2>
+           </td>
+           <td id="drink-calories-cell-id"></td>
+         </tr>
+         <tr>
+           <td>
+             <h2>Instructions</h2>
+           </td>
+           <td id="drink-special-instructions-cell-id"></td>
+         </tr>
+ 
+       </table>
+ 
+     </div>
+     <div id="drink-qr-outer-div" class="center margin20 drink-qr-outer-div">
+     </div>
+   </div>
+</main>
+ <div class="info-us">
+   <h1>Contact Us On Our Plartfom</h1>
+   </div>
+   <div class="socials">
+     <ul>
+       <li> <a href="https://instagram.com/" target="_blank"><img src="images/instagram.jpeg" alt="instagram" class="instagram-logo"></a></li>
+       <li> <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.jpeg" alt="facebook" class="fb-logo"></a></li>
+       <li> <a href="https://www.twitter.com/" target="_blank"><img src="images/twitter.jpeg" alt="twitter" class="twitter"></a></li>
+     </ul>
+   </div>
+<footer>
+   <div class="footer-container">
+      <div>
+         <picture><img src="images/bountiful.jpeg" alt="logo" height="200" width="150"></picture>
+      </div>
+      <div class="contact-info">
+         <p>Carlsbad </p>
+         <p>Los Angels San Diego<br>
+          CA 92651, USA</p>
+         <p>Phone: 111-222-4444 </p>
+      </div>
+      <div class="map">
+         <a href="https://goo.gl/maps/Hcw3bosmpDaBHeqQA" target="_blank">Location Map</a>
+      </div>
+   </div>
+   <div class="attribution">
+   <a href="attribution.html" target="_blank">Attribution</a>
+   </div>
+   <div class="rights"> &copy;2023 Carlsbad Bountiful Foods |<span id="year"></span> |Last Modified <span id="lastmodified"></span> |All rights reserved by BYUI </div>
+   </footer>    
+   
+   <script src="scripts/bountiful.js"></script>
+   <script src="scripts/juice.js"></script>
+ </body>
+</html>
